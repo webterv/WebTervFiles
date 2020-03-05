@@ -1,4 +1,43 @@
 *{
-    background: black;
-    color: purple;
+    margin: 0;
+    padding: 0;
+}
+
+#menuUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darksalmon;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-family: Candara;
+    font-style: revert;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: salmon;
+}
+
+.active {
+    background-color: lightsalmon;
+}
+footer{
+    background: chocolate;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    font-style: unset;
+    color: white;
 }
