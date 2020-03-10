@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+/* fleső svu menu */
 #menuUL {
     list-style-type: none;
     margin: 0;
@@ -50,6 +50,7 @@ main{
     min-height: 100vh;
     background: sienna;
 }
+/*készitették névegy kinézet*/
 .tarolo{
     position: relative;
     width: 1100px;
@@ -105,4 +106,57 @@ main{
         height: auto;
         padding: 30px 20px;
     }
+}
+/* Login page */
+.loginBox{
+    font-family: sans-serif;
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #D68910;
+    text-align: center;
+    border-radius: 15px;
+}
+.loginBox H1{
+    color: #757575;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.loginBox input[type = "text"],.loginBox input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color: #757575;
+    border-radius: 30px;
+}
+.loginBox input[type = "text"]:focus,.loginBox input[type = "password"]:focus{
+    width: 280px;
+    transition: 0.9s;
+    border-color: yellowgreen;
+}
+.loginBox input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid yellowgreen;
+    padding: 14px 40px;
+    outline: none;
+    color: #757575;
+    border-radius: 24px;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.loginBox input[type = "submit"]:hover{
+    background: yellowgreen;
 }
