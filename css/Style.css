@@ -3,160 +3,77 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
-/* fleső svu menu */
-#menuUL {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #AF601A;
-}
 
-li {
-    float: left;
-    width: 25%;
 }
-
-li a {
-    display: block;
-    color: white;
-    font-family: Candara;
-    font-style: revert;
-    text-align: center;
-    padding: 0px 0px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #CA6F1E;
-}
-
-.active {
-    background-color: #D68910;
-}
-footer{
-    background: #AF601A;
-    text-align: center;
-    font-size: 9px;
-    padding: 2px;
-    font-style: unset;
-    color: white;
-}
-main{
+body #idex{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     min-height: 100vh;
-    background: sienna;
+    background-image:url("../img/backgroun/bc.png");
 }
-/*készitették névegy kinézet*/
-.tarolo{
+.elems{
     position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
     margin: 20px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
 }
-.tarolo .box{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 420px;
-    margin: 20px;
-    background: #F39C12;
-    border-radius: 50%;
-}
-.tarolo .box .tartalom{
-    padding: 32px;
+.elems .box{
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-content: center;
     text-align: center;
-}
-.tarolo .box .tartalom .idezet{
-    max-width: 48px;
-}
-.tarolo .box .tartalom p{
-    color: white;
-    padding: 20px 0;
-}
-.tarolo .box .tartalom .ember{
-    max-width: 72px;
-    border-radius: 50%;
+    color: #fff;
+    transition: 0.7s;
 }
 
-.tarolo .box .tartalom h3 {
-    color: sienna;
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 600;
+.elems .box:hover{
+    background: #006600;
 }
 
-@media (max-width: 1050px) {
-    .tarolo{
-        justify-content: center;
-    }
+.elems .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
 }
-@media (max-width: 768px) {
-    .tarolo .box{
-        width: 100%;
+
+.elems .box:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.elems .box:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.elems .box:nth-child(3){
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.elems .box:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.elems .box:nth-child(5){
+    grid-column: span 3;
+    grid-row: span 1;
+}
+@media (max-width: 1231px){
+    .elems{
         height: auto;
-        padding: 30px 20px;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+
     }
-}
-/* Login page */
-.loginBox{
-    font-family: sans-serif;
-    width: 400px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #D68910;
-    text-align: center;
-    border-radius: 15px;
-}
-.loginBox H1{
-    color: #757575;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.loginBox input[type = "text"],.loginBox input[type = "password"]{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid orange;
-    padding: 14px 10px;
-    width:200px;
-    outline: none;
-    color: #757575;
-    border-radius: 30px;
-}
-.loginBox input[type = "text"]:focus,.loginBox input[type = "password"]:focus{
-    width: 280px;
-    transition: 0.9s;
-    border-color: yellowgreen;
-}
-.loginBox input[type = "submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid yellowgreen;
-    padding: 14px 40px;
-    outline: none;
-    color: #757575;
-    border-radius: 24px;
-    transition: 0.9s;
-    cursor: pointer;
-}
-.loginBox input[type = "submit"]:hover{
-    background: yellowgreen;
+    .elems .box{
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
 }
