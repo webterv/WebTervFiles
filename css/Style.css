@@ -46,6 +46,56 @@ body #idex{
 .elems .box:nth-child(1){
     grid-column: span 2;
     grid-row: span 2;
+    background: rgba(0,0,0,0.5);
+}
+.elems .box#kocsma{
+    background-size: cover;
+}
+#kocsma{
+    animation: valt 90s ease-in-out infinite;
+}
+@keyframes valt{
+    100%, 0%{
+        background-image: url("../img/pubs/cegerem/BarCraft Szeged.jpg");
+        height: 100%;
+    }
+    14.2%{
+        background-image: url("../img/pubs/cegerem/Bohém Tanya.jpg");
+    }
+    21.3%{
+        background-image: url("../img/pubs/cegerem/Campus Beer_More.jpg");
+    }
+    28.4%{
+        background-image: url("../img/pubs/cegerem/Cool Club.jpg");
+    }
+    35.5%{
+        background-image: url("../img/pubs/cegerem/DTK_Pub.jpg");
+    }
+    42.6%{
+        background-image: url("../img/pubs/cegerem/LvL Up eSport Bár.JPG");
+    }
+    49.7%{
+        background-image: url("../img/pubs/cegerem/Mignon Pub.jpg");
+    }
+    56.8%{
+        background-image: url("../img/pubs/cegerem/Number One Pub.jpg");
+    }
+    63.9%{
+        background-image: url("../img/pubs/cegerem/Nyugi Kert.jpg");
+    }
+    70%{
+        background-image: url("../img/pubs/cegerem/Pivo Vár Sörbár.jpg");
+    }
+    77.1%{
+        background-image: url("../img/pubs/cegerem/Pixel Bár és Kávézó.jpg");
+    }
+    84.2%{
+        background-image: url("../img/pubs/cegerem/Tiltott Csíki Söröző.jpg");
+    }
+    91.3%{
+        background-image: url("../img/pubs/cegerem/Vár Söröző.jpg");
+    }
+
 }
 .elems .box:nth-child(2){
     grid-column: span 1;
@@ -66,7 +116,7 @@ body #idex{
 }
 @media (max-width: 1231px){
     .elems{
-        height: auto;
+        height: 100%;
         width: 100%;
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         grid-template-rows: minmax(auto, auto);
