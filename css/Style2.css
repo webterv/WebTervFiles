@@ -27,27 +27,86 @@
 }
 
 <!--  -->
-.logo
-{
-    border-radius: 50%;
-    width: 15%;
-}
-
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.5s;
-    width: 15px;
-    height: 75px;
+    transition: 0.3s;
+    width: 62%;
+    height: max-content;
+    border-radius: 5px;
+    padding: 2px;
+    margin: auto;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container {
-    padding: 2px 16px;
+.logo
+{
+    border-radius: 50%;
+    width: 205px;
+    height: 200px;
+}
+table {
+
+    width: auto;
+    margin: revert;
+}
+
+
+iframe{
+    width:100%;
+    height:200px;
+
+    border:0;
+
+}
+h2{
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+td{
+
+    text-align: left;
+}
+
+.nyivatartas:hover{
+
+    background-color: #006600;
+    color: #f2f2f2;
+}
+td, th {
+    border: 1px ;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+body{
+    margin: 0px;
+}
+
+#cf {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+}
+
+#cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+    opacity:0;
+}
+a{
+    target: new;
 }
