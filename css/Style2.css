@@ -29,13 +29,13 @@ padding-bottom: .5%;
 
 <!--  -->
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(25,25,25,.2);
+    background: #f2f2f2;
     transition: 0.3s;
     width: 65%;
     height: max-content;
     border-radius: 5px;
-    padding: 5px;
-    margin: auto;
+    margin-bottom: 15px;
 
 }
 .card1{
@@ -44,7 +44,7 @@ padding-bottom: .5%;
     width: 65%;
     height: max-content;
     border-radius: 5px;
-    padding-top:1%;
+    padding: 1% 5px 5px 5px;
     margin: auto;
 
 }
@@ -122,6 +122,12 @@ body{
 #cf img.top:hover {
     opacity:0;
 }
-a{
-    target: new;
+td a{
+    color: #333333;
+    text-decoration: none;
+}
+main{
+    background-image: url("../img/backgroun/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
