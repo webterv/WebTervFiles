@@ -36,7 +36,8 @@ padding-bottom: .5%;
     height: max-content;
     border-radius: 5px;
     margin-bottom: 15px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 .card1{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
