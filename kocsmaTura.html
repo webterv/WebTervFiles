@@ -1,43 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/Style2.css">
+    <link rel="stylesheet" type="text/css" href="css/Style_TimeLine.css">
+    <title>Kocsma Túra</title>
 </head>
 <body>
 <header>
 </header>
 <nav>
-    <ul id="menuUL">
-        <li><a href="index.html">Első Oldal</a> </li>
-        <li><a class="active" href="kocsmaTura.html">Masodik oldal</a> </li>
-        <li><a href="Kocsmak.html">Harmadik Oldal</a> </li>
-        <li><a href="celok.html">Negyedik Oldal</a> </li>
-    </ul>
+    <div class="navbar">
+        <a href="index.html">Kezdőlap</a>
+        <a href="Kocsmak.html">Kocsmák</a>
+        <a href="kocsmaTura.html" class="active">Kocsma túra</a>
+        <a href="longinPage.html">Bejelentkezés</a>
+        <a href="celok.html">Célok</a>
+    </div>
 </nav>
+
 <main>
-    <div class="w3-container">
-        <h2>Card Example</h2>
 
-        <div class="w3-card-4 w3-dark-grey" style="width:50%">
+    <div class="timeline-container" id="timeline-1">
+        <div class="timeline-header">
+            <h2 class="timeline-header__title">Kocsma Túra</h2>
+            <h3 class="timeline-header__subtitle">JUST BEAR TÚRA</h3>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-text="ELSŐ ÁLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/zatony.jpg" />
+                    <h2 class="timeline__content-title">18:00</h2>
 
-            <div class="w3-container w3-center">
-                <h3>Friend Request</h3>
-                <img src="img_avatar3.png" alt="Avatar" style="width:80%">
-                <h5>John Doe</h5>
+                    <p class="timeline__content-desc">Záltony Söröző sörőző<br>A világ legalkalmasabb helye arra, hogy elkezd a estédet a nagyon alacsony árak miatt és tökéletes arra is, hogy új „ismerősöket” szerez, de ha félsz esetleg a erősen hétköznapoktól el aggregált emberektől, abban az esetben nem fog tetszeni neked a hely. Javasólt kötelező fogyasztás Rocky Cellar 0,5 l üveggel minek az ára csak 160 ft…</p>
+                </div>
+            </div>
 
-                <div class="w3-section">
-                    <button class="w3-button w3-green">Accept</button>
-                    <button class="w3-button w3-red">Decline</button>
+            <div class="timeline-item" data-text="MÁSODIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Mignon%20Pub.jpg"/>
+                    <h2 class="timeline__content-title">19:00</h2>
+                    <p class="timeline__content-desc">Mignon Pub<br>Szines, baratsagos mindig pezsgo. az arak elfogadhatoak, baratokkal beulni 1-1 neha tobb korre is idealis a het barmely napjan. Túránk részéről tökéletes egy hosszú lépés elfogyasztására.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="HARMADIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Pixel%20Bár%20és%20Kávézó.jpg"/>
+                    <h2 class="timeline__content-title">20:00</h2>
+                    <p class="timeline__content-desc">Pixel Bár és Kávézó<br>Fő profilja napközben az óriás hideg és meleg kávékülönlegességek, illetve az önkiszolgáló fagyizó. Este pedig ideális helyszín a buli előtti alapozáshoz, barátságos árakkal és személyzettel pár száz méterre a legfelkapottabb szegedi szórakozóhelyektől.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="NEGYEDIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Vár%20Söröző.jpg"/>
+                    <h2 class="timeline__content-title">21:00</h2>
+                    <p class="timeline__content-desc">Vár Söröző<br>Ez a hely maga a történelem. Már a rendszerváltás előtt is kocsmaként üzemelt. Igaz valami tiszti klub szerű helyként, mint a nagy öregektől hallottam. De a lényeg, hogy folyt a sör és az Unicum. A rendszerváltás után is zajlott itt az élet. Működött kocsmaként majd kínai étterem, majd gyors kajálda volt és sörözőként és most megint újra kocsma. Elnézést, ha valamit kihagytam a felsorolásból. Lényeg igazi kocsma, szocdizájn beütéssel. Mellesleg egész jó helyen található, a Széchenyi-tér közelében, valamint gyakorlatilag a Múzeum és a Posta épülete között. Belváros többi kocsmája innen 5-10 perc. A kocsma pont az épület sarkában van és itt a bejárata is. </p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="ÖTÖDIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Number%20One%20Pub.jpg"/>
+                    <h2 class="timeline__content-title">22:00</h2>
+                    <p class="timeline__content-desc">Number One Pub<br>Szeged legújabb kávézó- és szórakozóhelye 2007. novemberében készült el és 2008. március 1-vel nyitotta meg kapuit a nagyközönség előtt.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="HATODIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Tiltott%20Csíki%20Söröző.jpg"/>
+                    <h2 class="timeline__content-title">23:00</h2>
+                    <p class="timeline__content-desc">Tiltott Csíki Söröző<br> A nevéhez hűen rengeteg csiki sör van, többféle ízben, de azért másfajta söröket is lehet kapni és a szokásos rövid kisérők is ott vannak a pult mögött. Közvetlenül  a pult mellett , vagy a fenti galériás részben is helyett lehet foglalni 4-6 fős asztaloknál. Jó időben a kinti kiülős rész is üzemel.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="HETEDIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/DTK_Pub.jpg"/>
+                    <h2 class="timeline__content-title">00:00</h2>
+                    <p class="timeline__content-desc">DTK&Pub<br> A Milléniumi kávéház mellet ütött tanyát a helyiség . aminek a teljes neve Dugonics Téri Klub és Pub azaz DTK. Szintén pince helyiség bokszos leülési lehetőségekkel. Dupla Tv egymással háttal így még a pultnál se maradsz le a gólról!, Csocso és zenegépbe is lehet költeni egy kis aprót. Rendezvényekre, bulikra ki lehet bérelni a pub-ot.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="NYOLCADIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Bohém%20Tanya.jpg"/>
+                    <h2 class="timeline__content-title">01:00</h2>
+                    <p class="timeline__content-desc"><br></p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="KILENCEDIK ÁLLOMÁS">
+                <div class="timeline__content"><img class="timeline__img" src="img/pubs/cegerem/Cool%20Club.jpg"/>
+                    <h2 class="timeline__content-title">02:00</h2>
+                    <p class="timeline__content-desc"></p>
                 </div>
             </div>
 
         </div>
     </div>
+
 </main>
 <footer>
-    <p>© H&K Team.<p>
+    <p>© H&K team.<p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+
+    (function($) {
+        $.fn.timeline = function() {
+            var selectors = {
+                id: $(this),
+                item: $(this).find(".timeline-item"),
+                activeClass: "timeline-item--active",
+                img: ".timeline__img"
+            };
+            selectors.item.eq(0).addClass(selectors.activeClass);
+            selectors.id.css(
+                "background-image",
+                "url(" +
+                selectors.item
+                    .first()
+                    .find(selectors.img)
+                    .attr("src") +
+                ")"
+            );
+            var itemLength = selectors.item.length;
+            $(window).scroll(function() {
+                var max, min;
+                var pos = $(this).scrollTop();
+                selectors.item.each(function(i) {
+                    min = $(this).offset().top;
+                    max = $(this).height() + $(this).offset().top;
+                    var that = $(this);
+                    if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                        selectors.item.removeClass(selectors.activeClass);
+                        selectors.id.css(
+                            "background-image",
+                            "url(" +
+                            selectors.item
+                                .last()
+                                .find(selectors.img)
+                                .attr("src") +
+                            ")"
+                        );
+                        selectors.item.last().addClass(selectors.activeClass);
+                    } else if (pos <= max - 40 && pos >= min) {
+                        selectors.id.css(
+                            "background-image",
+                            "url(" +
+                            $(this)
+                                .find(selectors.img)
+                                .attr("src") +
+                            ")"
+                        );
+                        selectors.item.removeClass(selectors.activeClass);
+                        $(this).addClass(selectors.activeClass);
+                    }
+                });
+            });
+        };
+    })(jQuery);
+
+    $("#timeline-1").timeline();
+
+</script>
 </body>
 </html>

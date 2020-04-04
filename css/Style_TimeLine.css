@@ -9,7 +9,7 @@ margin-top: 2%;
 }
 .timeline {
     display: flex;
-    margin: 2% auto;
+    margin: 2% auto 25% auto;
     flex-wrap: wrap;
     flex-direction: column;
     max-width: 700px;
