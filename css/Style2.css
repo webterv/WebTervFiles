@@ -39,17 +39,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.card1{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background: #f2f2f2;
-    transition: 0.3s;
-    width: 65%;
-    height: max-content;
-    border-radius: 5px;
-    padding: 1% 5px 5px 5px;
-    margin: auto;
 
-}
 
 
 .card:hover {
