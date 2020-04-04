@@ -3,26 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <title>Bejelentkezés</title>
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <link rel="stylesheet" type="text/css" href="css/Style2.css">
 </head>
 <body>
 <nav>
-    <ul id="menuUL">
-        <li><a href="index.html">Első Oldal</a> </li>
-        <li><a href="kocsmaTura.html">Masodik oldal</a> </li>
-        <li><a href="Kocsmak.html">Harmadik Oldal</a> </li>
-        <li><a class="active" href="celok.html">Negyedik Oldal</a> </li>
-    </ul>
+    <div class="navbar">
+        <a href="index.html">Kezdőlap</a>
+        <a href="Kocsmak.html">Kocsmák</a>
+        <a href="kocsmaTura.html">Kocsma túra</a>
+        <a href="longinPage.html"  class="active">Bejelentkezés</a>
+        <a href="celok.html">Célok</a>
+    </div>
 </nav>
 <main>
+<table>
+    <tr>
+        <th>
+            <h2>Bejelentkezés</h2>
 
-    <form class="loginBox" action="longinPage.html" method="post">
-        <H1>Login</H1>
-        <input type="text" name="" placeholder="Felhasznalónév">
-        <input type="password" name="" placeholder="Jelszó">
-        <input type="submit" name="" placeholder="Login">
-    </form>
+            <form method="post">
+
+
+                <div class="container">
+                    <label for="uname"><b>Felhasználónév</b></label>
+                    <input type="text" placeholder="Írd be a felhasználóneved" name="uname" required>
+
+                    <label for="psw"><b>Jelszó</b></label>
+                    <input type="password" placeholder="Írd be a jelszavad" name="psw" required>
+
+                    <button type="submit">Bejelentkezés</button>
+
+                </div>
+
+            </form>
+        </th>
+        <th>
+            <form>
+                <div class="container">
+                    <h1>Regisztáció</h1>
+                    <hr>
+
+                    <label for="email"><b>*Email címed</b></label>
+                    <input type="text" placeholder="Ird be az emal címed" name="email" required>
+
+                    <label for="psw"><b>*Jelszó</b></label>
+                    <input type="password" placeholder="Ird be a jelszavad" name="psw" required>
+
+                    <label for="psw-repeat"><b>*Jelszó megerősítés</b></label>
+                    <input type="password" placeholder="Ird be a jelszavad még egyszer" name="psw-repeat" required>
+
+                    <label><b>Életkorod</b></label><br>
+                    <input class="felirat" type="date" name="szuletesnap"><br>
+
+                    <label class="felirat"><b>Neme</b></label><br>
+
+                    <input type="radio" id="no" name="neme" value="no">
+                    <label for="no">Nő</label><br>
+                    <input type="radio" id="ferfi" name="neme" value="ferfi">
+                    <label for="ferfi">Férfi</label><br>
+                    <input type="radio" id="egyeb" name="neme" value="egyeb">
+                    <label for="egyeb">Egyéb</label> <br>
+
+                    <input type="checkbox" name="vehicle1" value="Bike" required>
+                    <label> *Adat kezelési szabályzat <a href="https://policies.google.com/privacy?hl=hu">itt.</a></label><br>
+                    <hr>
+
+
+                    <button type="submit" class="registerbtn">Regisztráció</button>
+                    <button type="reset" class="registerbtn">Visszaállít</button>
+                </div>
+
+            </form>
+        </th>
+
+    </tr>
+    <tr>
+        <td colspan="2">
+            <form>
+                <div class="container">
+                    <h1>Postaláda</h1>
+                    <p>Itt tudsz nekünk jelezni bármilyen észrevételed lenne az oldallal kapcsolatban vagy esetlegesen kérdésed. </p>
+                    <hr>
+
+                    <label><b>Téma:</b></label> <br>
+                    <select id="cars">
+                        <option value="eszrevetel">Észrevetel</option>
+                        <option value="kerdes">Kérdés</option>
+                        <option value="kocsma felvetele" selected>Kocsma felvétele</option>
+                        <option value="egyeb">Egyéb</option>
+                    </select>
+
+                    <br>
+
+                    <label><b>Email címed</b></label>
+                    <input type="text" placeholder="Írd be az email címed" name="email" required>
+
+
+
+                    <label><b>Szöveg</b></label><br>
+                    <textarea type="text" placeholder="Üzenet" name="uzenet"></textarea>
+                    <hr>
+
+
+                    <button type="submit">Elküld</button>
+                </div>
+
+
+            </form>
+
+        </td>
+
+
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
 
 </main>
+<footer>
+    <p>© H&K Team.<p>
+</footer>
 </body>
 </html>
