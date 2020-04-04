@@ -1,0 +1,17 @@
+Index: css/Style2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/Style2.css	(revision b9597d0c740c86eddd6e3a1cb927a80fd08b360f)
++++ css/Style2.css	(date 1585740765844)
+@@ -36,7 +36,8 @@
+     height: max-content;
+     border-radius: 5px;
+     margin-bottom: 15px;
+-
++    margin-left: auto;
++    margin-right: auto;
+ }
+ .card1{
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
