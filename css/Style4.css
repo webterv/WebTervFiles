@@ -134,3 +134,21 @@ footer{
     text-align: center;
     font-size: 12px;
 }
+@media print {
+    a{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    h1 {
+        page-break-before: always;
+    }
+    h1, h2, h3, h4, h5 {
+        page-break-after: avoid;
+    }
+    table, figure {
+        page-break-inside: avoid;
+    }
+
+}
