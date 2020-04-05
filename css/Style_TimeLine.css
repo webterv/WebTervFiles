@@ -4,7 +4,7 @@ nav{
     top: 0px;
     z-index: 2;
 }
-main{
+.TimeLineMain{
 margin-top: 2%;
 }
 .timeline {
@@ -167,4 +167,15 @@ margin-top: 2%;
     color: #999;
     display: inline-block;
     font-family: Cardo;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 12px;
 }
