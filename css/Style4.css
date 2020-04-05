@@ -74,6 +74,10 @@ h1{
     margin-left: 10%;
     margin-right: 10%;
 }
+p.leiras::first-letter{
+    color: #006600;
+    font-size:200%;
+}
 .cards {
     box-shadow: 0 4px 8px 0 rgba(25,25,25,.2);
     background: #f2f2f2;
@@ -86,6 +90,31 @@ h1{
     margin-right: auto;
 }
 
+.animacion{
+    width: 40px;
+
+}
+.animacion:hover {
+    transform: rotate(180deg);
+    transition: transform 2s;
+    transition-timing-function: linear;
+}
+
+.mozog{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:90%; top:0px;}
+    50%  {left:90%; top:100px;}
+    75%  {left:0px; top:100px;}
+    100% {left:0px; top:0px;}
+}
 
 table.steelBlueCols {
     border: 4px solid #555555;
